@@ -1,0 +1,5755 @@
+[
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 12.656041622161865,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 4.596636056900024,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.500396966934204,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.5228416919708252,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.511376142501831,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4496736526489258,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.6918764114379883,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.506812334060669,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.5559186935424805,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.6502618789672852,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4791762828826904,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.3237717151641846,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.6002240180969238,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.3519442081451416,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.5761773586273193,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4279520511627197,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.5878493785858154,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.65779709815979,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4265234470367432,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.6023814678192139,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.3541686534881592,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.7480595111846924,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.679711103439331,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4844355583190918,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.6115219593048096,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.5044214725494385,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.3484175205230713,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.3230504989624023,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.349365472793579,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.40618896484375,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.8716888427734375,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 1, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 4.343182802200317,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.886911392211914,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.919008731842041,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 2.0234570503234863,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.757624626159668,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 1, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.4742333889007568,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.5022063255310059,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.416450023651123,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.3834505081176758,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.4710161685943604,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.385528326034546,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.4394710063934326,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.3876914978027344,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.449275255203247,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.5089178085327148,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.3821756839752197,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.4498071670532227,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.354250192642212,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.4432570934295654,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4161534309387207,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4583983421325684,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.6646764278411865,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.403679370880127,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.452789068222046,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4015412330627441,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.425063133239746,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.632211685180664,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.6261024475097656,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen2.5-7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.6435270309448242,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.5528333187103271,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.807321310043335,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0566368103027344,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.0199542045593262,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0811784267425537,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0355558395385742,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.057826042175293,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.395338773727417,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.2638888359069824,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.187838077545166,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 4.92341423034668,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.307807207107544,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 7.604568004608154,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 7.213412523269653,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0837690830230713,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.078998327255249,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0662121772766113,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.1006426811218262,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.098158359527588,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0321736335754395,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.084961175918579,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0624475479125977,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.1158623695373535,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0416486263275146,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0332930088043213,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0414130687713623,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.0953996181488037,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.393052101135254,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.5149867534637451,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.2160670757293701,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.4302937984466553,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.133366346359253,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1915597915649414,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.3372299671173096,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.5673935413360596,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1512577533721924,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.2382285594940186,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 2,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.5072417259216309,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0715374946594238,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 2,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.50675630569458,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1505942344665527,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1384146213531494,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 5,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1371781826019287,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.1216461658477783,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.2425572872161865,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0994446277618408,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Account Access\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 2.0431063175201416,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Account Access\",\n  \"urgency\": 2,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.161869764328003,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.8249378204345703,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 5.484917640686035,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 10.308539867401123,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Account Access\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1984937191009521,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.2047622203826904,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0491654872894287,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0260639190673828,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.065664529800415,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.183570146560669,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 5,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.1416494846343994,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.0021538734436035,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-qwen3-4b-2507",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.2860784530639648,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.075580358505249,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9405801296234131,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9436032772064209,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.9679574966430664,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0603382587432861,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0185203552246094,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 1, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9666473865509033,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0021231174468994,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9253754615783691,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.205592393875122,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.041766881942749,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.042245864868164,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.941474437713623,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.0369699001312256,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.539640188217163,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.968726396560669,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 1.065727710723877,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.258634090423584,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.2280166149139404,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9688715934753418,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.996239185333252,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0090303421020508,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.0088050365447998,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9956293106079102,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9197032451629639,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.3554940223693848,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.0084030628204346,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0386230945587158,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.9027323722839355,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 5.95296835899353,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 3.757053852081299,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 4.996572017669678,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9572701454162598,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.9359488487243652,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9560863971710205,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9503264427185059,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9463350772857666,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9276759624481201,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9665858745574951,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 1, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.1563661098480225,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.6083178520202637,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9717042446136475,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9554164409637451,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.133512258529663,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9773678779602051,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9706933498382568,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9654779434204102,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9436733722686768,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9496595859527588,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9633090496063232,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9791433811187744,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9809703826904297,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.9387049674987793,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0133166313171387,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0008718967437744,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0125644207000732,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 1.0021071434020996,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9500043392181396,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 2, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.9483880996704102,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-llama3.2-3b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0361409187316895,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.9742789268493652,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Accounting\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": false,
+    "clean_valid": false,
+    "predicted": null,
+    "correct": false,
+    "latency": 1.1124591827392578
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.8642687797546387,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.992647647857666,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.8869192600250244,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9230942726135254,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9923560619354248,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9150607585906982,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.035153865814209,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.3177213668823242,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 1.0763132572174072,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.268951177597046,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 10.791960000991821,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.990849494934082,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.8790805339813232,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.9133729934692383,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 6.631376266479492,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 10.600342512130737,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 9.119765520095825,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 2.6475131511688232,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Technical Support\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.8617181777954102,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 4.136728048324585,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.8973243236541748,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.8839876651763916,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9545440673828125,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.070638656616211,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0290396213531494,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.8763477802276611,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.8769850730895996,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v1",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.9075355529785156,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1643810272216797,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 1, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.8562455177307129,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9116098880767822,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.2311785221099854,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 6.016288757324219,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9909722805023193,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 1,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9786040782928467,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9649264812469482,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.9144489765167236,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 1,\n  \"requires_human_escalation\": false\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.9103817939758301,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.8901665210723877,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9711949825286865,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.9692142009735107,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.9838390350341797,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Technical Support\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.97206711769104,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.9062516689300537,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": 3,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.977686882019043,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "correct": true,
+    "latency": 0.9349455833435059,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.8922362327575684,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Account Access\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.004629373550415,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9620473384857178,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Account Access\",\n  \"urgency\": 4,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.088526964187622,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Account Access\", \"urgency\": 3, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "correct": false,
+    "latency": 0.939316987991333,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 5, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.967242956161499,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.001180648803711,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripci\u00f3n ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.9499073028564453,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": false
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\n  \"category\": \"Cancellation\",\n  \"urgency\": 5,\n  \"requires_human_escalation\": true\n}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.1225707530975342,
+    "urgency_exact": false,
+    "urgency_within_1": false,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 0.8997976779937744,
+    "urgency_exact": true,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    },
+    "raw_output": "{\"category\": \"Billing\", \"urgency\": 1, \"requires_human_escalation\": false}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    },
+    "correct": false,
+    "latency": 0.9334795475006104,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  },
+  {
+    "model": "colab-smollm2-1.7b",
+    "prompt_id": "prompt_v2",
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    },
+    "raw_output": "{\"category\": \"Cancellation\", \"urgency\": 4, \"requires_human_escalation\": true}",
+    "strict_valid": true,
+    "clean_valid": true,
+    "predicted": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    },
+    "correct": true,
+    "latency": 1.0117757320404053,
+    "urgency_exact": false,
+    "urgency_within_1": true,
+    "escalation_correct": true
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "TCK-001",
+    "input_message": "I was double-charged for my subscription this month. Please refund the extra $29.99 immediately.",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-002",
+    "input_message": "Can you send me an invoice for last month's enterprise plan payment? My accounting team needs it.",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 2,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-003",
+    "input_message": "Why did my monthly bill increase by $10 out of nowhere without any notification?",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-004",
+    "input_message": "My credit card expired and I need to update my billing info, but the portal keeps throwing a 500 error when I click save.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-005",
+    "input_message": "Hola, me cobraron dos veces este mes y necesito un reembolso urgente por favor.",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-006",
+    "input_message": "Oh fantastic, another month of paying for features that don't work and getting charged extra. Truly stellar customer service.",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-007",
+    "input_message": "Just wanted to check if annual prepayment discounts are available if I switch today.",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 1,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-008",
+    "input_message": "My payment failed because of a bank error, but I fixed it with my bank. Can you retry charging my card?",
+    "expected_output": {
+      "category": "Billing",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-009",
+    "input_message": "The API is returning 502 Bad Gateway errors for all our production endpoints since 10 AM!",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 5,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-010",
+    "input_message": "How do I set up webhook notifications for user sign-ups? Is there a documentation guide?",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 2,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-011",
+    "input_message": "Dashboard charts are loading infinitely and never display our analytics data.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-012",
+    "input_message": "Mon application plante constamment lors de l'exportation des rapports en PDF.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-013",
+    "input_message": "Great job breaking the login flow with your latest update. Absolutely love not being able to use the software I pay for.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-014",
+    "input_message": "My billing invoice download link gives a 404 error page.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-015",
+    "input_message": "Is there a rate limit on the v2 search endpoint? We are seeing intermittent 429 responses.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-016",
+    "input_message": "Completely locked out of my account because the 2FA authenticator app code is rejected every time, and my billing renewal is tomorrow.",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-017",
+    "input_message": "I forgot my password and the password reset email never arrives in my inbox or spam folder.",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-018",
+    "input_message": "How can I add a secondary team member to my admin workspace dashboard?",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 2,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-019",
+    "input_message": "Someone unauthorized accessed my account and changed the primary email address!",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-020",
+    "input_message": "Ich kann mich nicht mehr einloggen, mein Account scheint gesperrt zu sein.",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-021",
+    "input_message": "Oh perfect, locked out right before a client presentation. Couldn't have asked for better timing.",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 5,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-022",
+    "input_message": "Can you transfer ownership of our company account to my new email address since the previous admin left the company?",
+    "expected_output": {
+      "category": "Account Access",
+      "urgency": 3,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-023",
+    "input_message": "My account session expires every 5 minutes and I have to log back in constantly.",
+    "expected_output": {
+      "category": "Technical Support",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-024",
+    "input_message": "I would like to cancel my subscription effective immediately and request a prorated refund.",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-025",
+    "input_message": "We are shutting down our project and no longer need our enterprise account. Please terminate the service at the end of the billing cycle.",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-026",
+    "input_message": "Quiero cancelar mi suscripción ahora mismo, el servicio no cumple con nuestras expectativas.",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-027",
+    "input_message": "Oh sure, make it as difficult as possible to find the cancel button. Truly wonderful user retention tactics.",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 3,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-028",
+    "input_message": "I want to cancel because your server keeps crashing and billing me for downtime. Fix it or cancel me now.",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 4,
+      "requires_human_escalation": true
+    }
+  },
+  {
+    "id": "TCK-029",
+    "input_message": "How do I downgrade from the Pro plan to the Free tier?",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 2,
+      "requires_human_escalation": false
+    }
+  },
+  {
+    "id": "TCK-030",
+    "input_message": "Cancel my account because your team has completely ignored my support tickets for two weeks!",
+    "expected_output": {
+      "category": "Cancellation",
+      "urgency": 5,
+      "requires_human_escalation": true
+    }
+  }
+]
