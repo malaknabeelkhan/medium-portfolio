@@ -1,0 +1,595 @@
+=======================================================
+RETRIEVAL EVALUATION
+=======================================================
+
+Q1
+Retrieved: ['D2', 'D1', 'D4', 'D3']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q2
+Retrieved: ['D1', 'D4', 'D3', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q3
+Retrieved: ['D3', 'D4', 'D1', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q4
+Retrieved: ['D4', 'D3', 'D1', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+OVERALL RETRIEVAL METRICS
+Mean_Precision: 0.333
+Mean_Recall: 1.000
+Mean_Reciprocal_Rank: 1.000
+
+=======================================================
+GENERATION EVALUATION
+=======================================================
+
+Q1
+Answer: Based on the provided context, a printer may be showing "offline" due to several reasons including power issues, disconnected cables, incorrect printer selection, driver problems, or a stuck print queue. First, ensure that the printer is powered on and has no visible error indicators. Check the USB or network cable connection. For network printers, verify they are connected to the appropriate network. If other devices can connect but not the printer, it could be related to router issues or internet connectivity problems. Disabling airplane mode, checking Wi-Fi settings in Windows Settings, ensuring correct printer selection, and restarting services like Print Spooler may also resolve the issue.
+
+Claims:
+- A printer showing 'offline' is due to power issues.
+- A printer showing 'offline' is due to disconnected cables.
+- A printer showing 'offline' is due to incorrect printer selection.
+- A printer showing 'offline' is due to driver problems.
+- A printer showing 'offline' has a stuck print queue.
+
+Generation metrics:
+faithfulness: 0.400
+answer_relevance: 0.900
+context_relevance: 0.500
+
+Q2
+Answer: The Wi-Fi connection problems could be due to incorrect network settings, weak wireless signals, router problems, outdated network drivers, DNS issues, or connectivity issues with other devices on the same network. You should first check if Wi-Fi is enabled and airplane mode is disabled, verify that other devices can connect to the same wireless network, and inspect the computer's network configuration, IP address, subnet mask, default gateway, and DNS server.
+
+Claims:
+- Wi-Fi connection problems could be due to incorrect network settings.
+- Weak wireless signals can cause Wi-Fi connectivity issues.
+- Router problems such as outdated firmware or hardware failures can also result in Wi-Fi problems.
+- Outdated network drivers may interfere with proper Wi-Fi operation.
+- DNS issues involving incorrect domain name servers can affect Internet access through Wi-Fi.
+- Connectivity issues with other devices on the same network could disrupt Wi-Fi signals.
+
+Generation metrics:
+faithfulness: 0.833
+answer_relevance: 0.700
+context_relevance: 0.600
+
+Q3
+Answer: To reset your Windows password, you should follow these steps:
+
+1. Verify that the correct username and password are being entered.
+2. Check the keyboard layout and Caps Lock status.
+3. For domain accounts, ensure network connectivity to the organization's authentication services.
+4. If the password has expired, contact the organization's approved password-change procedure.
+5. Use the official self-service password reset portal if one is available.
+
+If an account is locked, it should be inspected by an authorized IT administrator in Active Directory Users and Computers. The administrator can unlock the account according to company policy.
+
+If you still cannot sign in after checking all of these steps, verify that other users can access the same computer and whether the issue affects just one account or multiple accounts. If persistent authentication failures continue, escalate the situation to the system administrator.
+
+Remember, if you are using a domain account, ensure proper network connectivity for domain authentication.
+
+Claims:
+- To reset your Windows password, follow these steps:
+- Verify that the correct username and password are being entered.
+- Check the keyboard layout and Caps Lock status.
+- For domain accounts, ensure network connectivity to the organization's authentication services.
+- If the password has expired, contact the organization's approved password-change procedure.
+- Use the official self-service password reset portal if one is available.
+- If an account is locked, inspect it by an authorized IT administrator in Active Directory Users and Computers.
+- The administrator can unlock the account according to company policy.
+- Verify that other users can access the same computer and whether the issue affects just one account or multiple accounts.
+- Escalate the situation to the system administrator if persistent authentication failures continue.
+
+Generation metrics:
+faithfulness: 0.800
+answer_relevance: 1.000
+context_relevance: 0.700
+
+Q4
+Answer: DNS resolution has failed.
+
+Claims:
+- DNS resolution has failed.
+
+Generation metrics:
+faithfulness: 0.000
+answer_relevance: 0.800
+context_relevance: 0.400
+
+
+
+=======================================================
+RETRIEVAL EVALUATION
+=======================================================
+
+Q1
+Retrieved: ['D2', 'D1', 'D4', 'D3']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q2
+Retrieved: ['D1', 'D4', 'D3', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q3
+Retrieved: ['D3', 'D4', 'D1', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q4
+Retrieved: ['D4', 'D3', 'D1', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+OVERALL RETRIEVAL METRICS
+Mean_Precision: 0.333
+Mean_Recall: 1.000
+Mean_Reciprocal_Rank: 1.000
+
+=======================================================
+GENERATION EVALUATION
+=======================================================
+
+Q1
+Answer: Based on the context provided, your printer might be showing offline due to several reasons such as power issues, disconnected cables, incorrect printer selection, driver problems, or a stuck print queue. To troubleshoot, verify that theprinter is powered on and has no visible error indicators. Check the USB or network cable connection. For network printers, confirm that the printer and computer are connected to the appropriate network. Open Windows Settings and navigate to Bluetooth and devices, then Printers and scanners, to verify that the correct printer is selected and that it is not offline or paused. Open the print queue and cancel any stuck jobs. If the issue persists, check the printer driver in Device Manageror reinstall the correct manufacturer driver.
+
+Claims:
+- The printer might be showing offline due to power issues.
+- The printer might be showing offline due to disconnected cables.
+- The printer might be showing offline due to incorrect printer selection.
+- The printer might be showing offline due to driver problems.
+- The printer might be showing offline due to a stuck print queue.
+- To troubleshoot, verify that the printer is powered on and has no visible error indicators.
+- To troubleshoot, check the USB or network cable connection.
+- For network printers, confirm that the printer and computer are connected to the appropriate network.
+- To troubleshoot, open Windows Settings and navigate to Bluetooth and devices, then Printers and scanners, to verify thatthe correct printer is selected and that it is not offline or paused.
+- To troubleshoot, open the print queue and cancel any stuck jobs.
+- To troubleshoot, check the printer driver in Device Manager or reinstall the correct manufacturer driver.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.850
+
+Q2
+Answer: There are several potential reasons why your computer might not be able to connect to Wi-Fi:
+
+1. **Wi-Fi is Disabled**: Ensure that Wi-Fi is enabled on your computer and that airplane mode is turned off.
+2. **Incorrect Network Settings**: Verify that your computer has a valid IP address, subnet mask, default gateway, and DNSserver. You can check this by running `ipconfig /all` in Command Prompt.
+3. **Weak Wireless Signal**: The strength of the Wi-Fi signal can affect connectivity. Move closer to the router or check if other devices are experiencing similar issues.
+4. **Router Issues**: If other devices also cannot connect, the problem might be with the router or the internet connection. Restart the router and check if the issue persists.
+5. **Outdated Network Drivers**: Ensure that the wireless network adapter driver is up to date. You can update or reinstall the driver through Device Manager.
+6. **Incorrect Password**: If only your computer is affected, try disconnecting from the wireless network and reconnectingby entering the correct password.
+7. **169.254.x.x Address**: If your wireless adapter has an address starting with 169.254, it means your computer did not receive an IP address from DHCP. You may need to update or reinstall the wireless network adapter driver.
+
+If none of these steps resolve the issue, contact your network administrator for further assistance.
+
+Claims:
+- Wi-Fi can be disabled on a computer.
+- Airplane mode can be turned off on a computer.
+- A computer can have valid IP address, subnet mask, default gateway, and DNS server settings.
+- The strength of the Wi-Fi signal can affect connectivity.
+- Other devices can experience similar Wi-Fi connectivity issues.
+- Restarting the router can help resolve Wi-Fi connectivity issues.
+- Outdated network drivers can cause connectivity issues.
+- Updating or reinstalling network drivers can resolve connectivity issues.
+- Incorrect Wi-Fi passwords can prevent a computer from connecting to a network.
+- A 169.254.x.x address indicates that the computer did not receive an IP address from DHCP.
+- Network administrators can provide further assistance if the issue persists.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 1.000
+context_relevance: 0.850
+
+Q3
+Answer: If you need to reset your Windows password, you should use the official self-service password reset portal provided by your organization, if one is available. Follow the organization's approved password-change procedure. If you do not have access to the self-service portal, contact an authorized IT administrator who can inspect your account status in Active Directory Users and Computers and assist with resetting your password according to company policy.
+
+Claims:
+- You should use the official self-service password reset portal provided by your organization to reset your Windows password if one is available.
+- You should follow the organization's approved password-change procedure to reset your Windows password.
+- If you do not have access to the self-service portal, you should contact an authorized IT administrator to reset your password.
+- An authorized IT administrator can inspect your account status in Active Directory Users and Computers.
+- An authorized IT administrator can assist with resetting your password according to company policy.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.300
+
+Q4
+Answer: If you are unable to access websites using their domain names, it could be due to DNS resolution failing. First, verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server by running `ipconfig /all` inCommand Prompt. Test basic connectivity by pinging the default gateway. Then, run `nslookup` followed by a domain name to check if the configured DNS server can resolve it. If name resolution fails, inspect the configured DNS server. An incorrect or unreachable DNS server can prevent hostname resolution. Use the organization's approved DNS settings. Clearing the local DNS resolver cache by running `ipconfig /flushdns` might also help. If the issue continues, investigate DNS server availability and escalate persistent failures to the network administrator.
+
+Claims:
+- If you are unable to access websites using their domain names, it could be due to DNS resolution failing.
+- Running `ipconfig /all` in Command Prompt can verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server.
+- Pinging the default gateway can test basic connectivity.
+- Running `nslookup` followed by a domain name can check if the configured DNS server can resolve it.
+- An incorrect or unreachable DNS server can prevent hostname resolution.
+- Using the organization's approved DNS settings might resolve the issue.
+- Clearing the local DNS resolver cache by running `ipconfig /flushdns` might help.
+- If the issue continues, investigate DNS server availability and escalate persistent failures to the network administrator.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.850
+
+
+=======================================================
+RETRIEVAL EVALUATION
+=======================================================
+
+Q1
+Retrieved: ['D2', 'D1', 'D4', 'D3']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q2
+Retrieved: ['D1', 'D4', 'D3', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q3
+Retrieved: ['D3', 'D4', 'D1', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q4
+Retrieved: ['D4', 'D3', 'D1', 'D2']
+precision: 0.333
+recall: 1.000
+reciprocal_rank: 1.000
+
+OVERALL RETRIEVAL METRICS
+Mean_Precision: 0.333
+Mean_Recall: 1.000
+Mean_Reciprocal_Rank: 1.000
+
+=======================================================
+GENERATION EVALUATION
+=======================================================
+
+Q1
+Answer: Based on the context provided, your printer might be showing offline due to several reasons such as power issues, disconnected cables, incorrect printer selection, driver problems, or a stuck print queue. To troubleshoot, verify that the printer is powered on and has no visible error indicators. Check the USB or network cable connection. For network printers, ensure the printer and computer are connected to the appropriate network. Additionally, open Windows Settings, navigate to Bluetooth and devices, then Printers and scanners, and verify that the correct printer is selected and not offline or paused. Open the print queue and cancel any stuck jobs. If the issue persists, check the printer's driver in Device Manager or reinstall the correct manufacturer driver.
+
+Claims:
+- The printer might be showing offline due to power issues.
+- The printer might be showing offline due to disconnected cables.
+- The printer might be showing offline due to incorrect printer selection.
+- The printer might be showing offline due to driver problems.
+- The printer might be showing offline due to a stuck print queue.
+- To troubleshoot, verify that the printer is powered on and has no visible error indicators.
+- To troubleshoot, check the USB or network cable connection.
+- For network printers, ensure the printer and computer are connected to the appropriate network.
+- To troubleshoot, open Windows Settings, navigate to Bluetooth and devices, then Printers and scanners, and verify that the correct printer is selected and not offline or paused.
+- To troubleshoot, open the print queue and cancel any stuck jobs.
+- If the issue persists, check the printer's driver in Device Manager.
+- If the issue persists, reinstall the correct manufacturer driver.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.850
+
+Q2
+Answer: There are several potential reasons why your computer might be unable to connect to Wi-Fi:
+
+1. **Wi-Fi is Disabled**: Ensure that Wi-Fi is enabled on your computer and that airplane mode is turned off.
+2. **Incorrect Network Settings**: Verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server. You can check this by running `ipconfig /all` in Command Prompt.
+3. **Weak Wireless Signal**: The strength of the Wi-Fi signal can affect connectivity. Move closer to the router or check if other devices can connect to the network.
+4. **Router Issues**: If other devices also cannot connect, the problem might be with the router or the internet connection. Restart the router and check if the issue persists.
+5. **Outdated Network Drivers**: Ensure that the wireless network adapter driver is up to date. You can update or reinstall the driver through Device Manager.
+6. **Address Conflict**: If the wireless adapter has an address beginning with 169.254, it indicates that the computer did not receive an IP address from DHCP. In this case, you might need to update or reinstall the wireless network adapter driver.
+
+If none of these steps resolve the issue, you may need to contact your network administrator for further assistance.
+
+Claims:
+- Wi-Fi is disabled on the computer.
+- Airplane mode is turned off on the computer.
+- The computer has a valid IP address, subnet mask, default gateway, and DNS server.
+- The strength of the Wi-Fi signal can affect connectivity.
+- Other devices can connect to the network.
+- The problem might be with the router or the internet connection.
+- Restarting the router can help resolve the issue.
+- The wireless network adapter driver is up to date.
+- Updating or reinstalling the wireless network adapter driver can resolve the issue.
+- An address conflict is indicated by an IP address beginning with 169.254.
+- Contacting the network administrator is necessary if the issue persists.
+
+Generation metrics:
+faithfulness: 0.727
+answer_relevance: 1.000
+context_relevance: 0.850
+
+Q3
+Answer: If you need to reset your Windows password, you should use the official self-service password reset portal provided by your organization, if one is available. Follow the organization's approved password-change procedure. If you do not have access to the self-service portal, contact an authorized IT administrator who can inspect your account status in Active Directory Users and Computers and assist with resetting your password according to company policy.
+
+Claims:
+- You should use the official self-service password reset portal provided by your organization to reset your Windows password if one is available.
+- Follow the organization's approved password-change procedure when resetting your Windows password.
+- If you do not have access to the self-service portal, contact an authorized IT administrator.
+- An authorized IT administrator can inspect your account status in Active Directory Users and Computers.
+- An authorized IT administrator can assist with resetting your password according to company policy.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.300
+
+Q4
+Answer: Based on the provided context, you might be unable to access websites using their domain names due to DNS resolution failure. Here are some steps you can take:
+
+1. Verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server by running `ipconfig /all` in Command Prompt.
+2. Test basic connectivity by pinging your default gateway.
+3. Run `nslookup` followed by a domain name to check if your configured DNS server can resolve it.
+4. If name resolution fails, inspect the configured DNS server. Ensure it is correct and reachable.
+5. Clear the local DNS resolver cache by running `ipconfig /flushdns`.
+6. If the issue persists, investigate DNS server availability and escalate the problem to your network administrator.
+
+These steps should help diagnose and potentially resolve the issue with DNS resolution.
+
+Claims:
+- You might be unable to access websites using their domain names due to DNS resolution failure.
+- Running `ipconfig /all` in Command Prompt can verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server.
+- Pinging your default gateway can test basic connectivity.
+- Running `nslookup` followed by a domain name can check if your configured DNS server can resolve it.
+- Inspecting the configured DNS server to ensure it is correct and reachable can help diagnose the issue.
+- Clearing the local DNS resolver cache by running `ipconfig /flushdns` can resolve DNS resolution issues.
+- Investigating DNS server availability can help diagnose persistent issues.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 1.000
+context_relevance: 0.850
+PS D:\Projects\MiniProjects\helpdesk-rag-evaluation> python run_evaluation.py 
+
+=======================================================
+RETRIEVAL EVALUATION
+=======================================================
+
+Q1
+Retrieved: ['D2']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q2
+Retrieved: ['D1']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q3
+Retrieved: ['D3']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q4
+Retrieved: ['D4']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+OVERALL RETRIEVAL METRICS
+Mean_Precision: 1.000
+Mean_Recall: 1.000
+Mean_Reciprocal_Rank: 1.000
+
+=======================================================
+GENERATION EVALUATION
+=======================================================
+
+Q1
+Answer: The printer might be showing as offline because there are stuck print jobs in the print queue, or the Windows Print Spooler service might be stopped or malfunctioning. Additionally, the printer driver could be outdated or incorrectly installed. Checking the print queue, restarting the Print Spooler service, verifying the driver in Device Manager, or reinstalling the correct manufacturer driver might resolve the issue. Printing a test page can also help determine if the problem is resolved.
+
+Claims:
+- The printer might be showing as offline because there are stuck print jobs in the print queue.
+- The Windows Print Spooler service might be stopped or malfunctioning.
+- The printer driver could be outdated or incorrectly installed.
+- Checking the print queue can help determine the issue.
+- Restarting the Print Spooler service might resolve the issue.
+- Verifying the driver in Device Manager can help determine the issue.
+- Reinstalling the correct manufacturer driver might resolve the issue.
+- Printing a test page can help determine if the problem is resolved.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 1.000
+context_relevance: 0.850
+
+Q2
+Answer: Based on the provided context, there could be several reasons why your computer can't connect to Wi-Fi:
+
+1. **Incorrect Network Settings**: Ensure that Wi-Fi is enabled on your computer and that airplane mode is turned off.
+2. **Weak Wireless Signal**: Other devices might be able to connect to the network, but your computer might be experiencing a weak signal.
+3. **Router Issues**: If other devices also can't connect, the problem might be with the router or the internet connection.
+4. **Outdated Network Drivers**: Make sure that the network drivers on your computer are up to date.
+5. **Incorrect Password**: If only your computer is having trouble, try disconnecting from the wireless network and reconnecting by entering the correct password.
+6. **Restarting Devices**: Restart both your computer and the router.
+7. **Check Network Adapter**: Open Command Prompt and run `ipconfig` to check if the wireless adapter is functioning correctly.
+
+If these steps do not resolve the issue, you may need to seek further assistance as the problem could be more complex.
+
+Claims:
+- Ensure that Wi-Fi is enabled on your computer and that airplane mode is turned off.
+- Other devices might be able to connect to the network, but your computer might be experiencing a weak signal.
+- If other devices also can't connect, the problem might be with the router or the internet connection.
+- Make sure that the network drivers on your computer are up to date.
+- If only your computer is having trouble, try disconnecting from the wireless network and reconnecting by entering the correct password.
+- Restart both your computer and the router.
+- Open Command Prompt and run `ipconfig` to check if the wireless adapter is functioning correctly.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 1.000
+context_relevance: 0.950
+
+Q3
+Answer: If you are unable to sign in to Windows and need to reset your password, you can use the official self-service password reset portal provided by your organization, if one is available. Follow the instructions on the portal to reset your password. If you do not have access to the self-service portal or need further assistance, contact your IT support team for help.
+
+Claims:
+- If you are unable to sign in to Windows and need to reset your password, you can use the official self-service password reset portal provided by your organization, if one is available.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.300
+
+Q4
+Answer: Based on the context provided, you might be unable to access websites using their domain names due to DNS resolution failure. This could be caused by issues such as an incorrect or unreachable DNS server configuration. To troubleshoot, you should:
+
+1. Verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server by running `ipconfig /all` in Command Prompt.
+2. Test basic connectivity by pinging your default gateway.
+3. Run `nslookup` followed by a domain name to check if your configured DNS server can resolve it.
+
+If DNS resolution still fails, you may need to inspect or change the configured DNS server settings.
+
+Claims:
+- You might be unable to access websites using their domain names due to DNS resolution failure.
+- DNS resolution failure could be caused by issues such as an incorrect or unreachable DNS server configuration.
+- To troubleshoot, you should verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server by running `ipconfig /all` in Command Prompt.
+- To troubleshoot, you should test basic connectivity by pinging your default gateway.
+- To troubleshoot, you should run `nslookup` followed by a domain name to check if your configured DNS server can resolve it.
+- If DNS resolution still fails, you may need to inspect or change the configured DNS server settings.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.950
+PS D:\Projects\MiniProjects\helpdesk-rag-evaluation> python run_evaluation.py
+
+=======================================================
+RETRIEVAL EVALUATION
+=======================================================
+
+Q1
+Retrieved: ['D2']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q2
+Retrieved: ['D1']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q3
+Retrieved: ['D3']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+Q4
+Retrieved: ['D4']
+precision: 1.000
+recall: 1.000
+reciprocal_rank: 1.000
+
+OVERALL RETRIEVAL METRICS
+Mean_Precision: 1.000
+Mean_Recall: 1.000
+Mean_Reciprocal_Rank: 1.000
+
+=======================================================
+GENERATION EVALUATION
+=======================================================
+
+Q1
+Answer: The printer might be showing as offline because there are stuck print jobs in the print queue, the Windows Print Spooler service is not running properly, or the printer driver is outdated or incorrect. Checking the print queue, restarting the Print Spooler service, verifying the printer driver, and printing a test page can help diagnose and resolve the issue.
+
+Claims:
+- The printer might be showing as offline because there are stuck print jobs in the print queue.
+- The printer might be showing as offline because the Windows Print Spooler service is not running properly.
+- The printer might be showing as offline because the printer driver is outdated or incorrect.
+- Checking the print queue can help diagnose the issue.
+- Restarting the Print Spooler service can help diagnose the issue.
+- Verifying the printer driver can help diagnose the issue.
+- Printing a test page can help diagnose the issue.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 1.000
+context_relevance: 0.750
+
+Q2
+Answer: Based on the provided context, there could be several reasons why your computer can't connect to Wi-Fi:
+
+1. **Incorrect Network Settings**: Ensure that Wi-Fi is enabled on your computer and that airplane mode is turned off.
+2. **Weak Wireless Signal**: Other devices might be able to connect to the network, but your computer might be experiencing a weak signal.
+3. **Router Issues**: If other devices also can't connect, the problem might be with the router or the internet connection.
+4. **Outdated Network Drivers**: Make sure your network drivers are up to date.
+5. **Incorrect Password**: If only your computer is affected, try disconnecting from the wireless network and reconnecting by entering the correct password.
+6. **Restarting Devices**: Restart both your computer and the router.
+7. **Command Prompt Check**: Open Command Prompt and run `ipconfig` to check if the wireless adapter has the correct configuration.
+
+If these steps do not resolve the issue, you may need to consult with a professional or seek further assistance.
+
+Claims:
+- Ensure that Wi-Fi is enabled on your computer and that airplane mode is turned off.
+- Other devices might be able to connect to the network, but your computer might be experiencing a weak signal.
+- If other devices also can't connect, the problem might be with the router or the internet connection.
+- Make sure your network drivers are up to date.
+- If only your computer is affected, try disconnecting from the wireless network and reconnecting by entering the correct password.
+- Restart both your computer and the router.
+- Open Command Prompt and run `ipconfig` to check if the wireless adapter has the correct configuration.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 1.000
+context_relevance: 0.750
+
+Q3
+Answer: If you are unable to sign in to Windows and need to reset your password, you should use the official self-service password reset portal provided by your organization, if one is available. Follow the instructions provided by your organization for resetting your password through this portal. If no self-service portal is available, contact your IT administrator for assistance.
+
+Claims:
+- If you are unable to sign in to Windows and need to reset your password, you should use the official self-service password reset portal provided by your organization, if one is available.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.500
+
+Q4
+Answer: DNS resolution has failed, which means your computer is unable to translate the domain names of websites into their corresponding IP addresses. To troubleshoot this issue, follow these steps:
+
+1. Verify that your computer has a valid IP address, subnet mask, default gateway, and DNS server by running `ipconfig /all` in Command Prompt.
+2. Test basic connectivity by pinging your default gateway.
+3. Run `nslookup` followed by a domain name to check if your configured DNS server can resolve it.
+
+If name resolution still fails, inspect the configured DNS server to ensure it is correct and reachable.
+
+Claims:
+- DNS resolution failure means the computer cannot translate domain names into IP addresses.
+- Troubleshooting DNS resolution failure involves verifying network configuration using ipconfig /all.
+- Basic connectivity can be tested by pinging the default gateway.
+- nslookup can be used to check DNS server resolution.
+- If DNS resolution fails, the configured DNS server should be inspected for correctness and reachability.
+
+Generation metrics:
+faithfulness: 1.000
+answer_relevance: 0.850
+context_relevance: 0.750
